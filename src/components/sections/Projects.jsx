@@ -20,7 +20,7 @@ export const Projects = () => {
                 which implement play, pause and volume control functionalities.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["HTML,CSS,JS"].map((tech, key) => (
+                {["HTML","CSS","JS"].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
