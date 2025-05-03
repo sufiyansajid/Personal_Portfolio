@@ -131,14 +131,13 @@ export const Projects = () => {
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">Predicting Housing Prices </h3>
+              <h3 className="text-xl font-bold mb-2">FitME </h3>
               <p className="text-gray-400 mb-4">
-                This project explores the use of various regression models to
-                predict housing prices based on features such as area,
-                bedrooms, bathrooms, and stories.
+                Developed a React based E-commenrce website named FitME 
+                contains MEN, WOMEN and KIDS section.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["Python"].map((tech, key) => (
+                {["React"].map((tech, key) => (
                   <span
                     key={key}
                     className="
@@ -155,7 +154,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center ">
                 <a
-                  href="https://github.com/sufiyansajid/Predicting-Housing-Prices.git"
+                  href="https://github.com/sufiyansajid/FitME.git"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
