@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import resume from "./Resume.pdf"
+import resume from "./MuhammadSufiyanSajid_MERN.pdf"
 
 export const Home = () => {
   return (
@@ -14,7 +14,7 @@ export const Home = () => {
           </h1>
 
           <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            I’m a passionate software engineering student. 
+            I’m a passionate software engineering student.
             <br />Highly motivated for a challenging problems to apply my theoretical knowledge in real-world projects.
           </p>
           <div className="flex justify-center space-x-4 mb-8">
@@ -36,7 +36,7 @@ export const Home = () => {
           <div className="flex justify-center">
             <button className="bg-blue-500/10 text-blue-500 py-3 px-6 rounded-full font-medium transition-all duration-200 hover:bg-blue-500/20 
                                     hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)]">
-              <a href={resume} download='resume'>Download My CV</a>
+              <a href={resume} download='MuhammadSufiyanSajid_MERN'>Download My CV</a>
             </button>
           </div>
         </div>
