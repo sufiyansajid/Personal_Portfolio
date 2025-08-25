@@ -13,14 +13,44 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+              <h3 className="text-xl font-bold mb-2">CarVizion</h3>
+              <p className="text-gray-400 mb-4 text-justify">
+                CarVizion is an AR-powered car customization platform that lets users visualize modifications in real-time.
+                Built its frontend using React with Typescript, TailwindCSS, Shadcn, SkiperUI and Spline, it enables dynamic color, rim, and body customizations via a responsive web interface.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["React", "Typescript", "TailwindCSS", "Shadcn", "SkiperUI", "Spline"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://carvizion.netlify.app/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2"> Music Player Web App</h3>
-              <p className="text-gray-400 mb-4">
-                Music Player Web App is a Html, CSS and JS based music player 
+              <p className="text-gray-400 mb-4 text-justify">
+                Music Player Web App is a Html, CSS and JS based music player
                 which implement play, pause and volume control functionalities.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["HTML","CSS","JS"].map((tech, key) => (
+                {["HTML", "CSS", "JS"].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
@@ -50,7 +80,7 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">Snake Water Gun Game </h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 text-justify">
                 Python-based command-line game, "Snake, Water,
                 Gun," implementing decision-making logic using conditional
                 statements and randomization.
@@ -90,7 +120,7 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">Real State Dashboard </h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-4 text-justify">
                 Designed and implemented a real estate dashboard using a
                 housing dataset to visualize market trends, property values, and
                 demographic insights.
@@ -132,8 +162,8 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">FitME </h3>
-              <p className="text-gray-400 mb-4">
-                Developed a React based E-commenrce website named FitME 
+              <p className="text-gray-400 mb-4 text-justify">
+                Developed a React based E-commenrce website named FitME
                 contains MEN, WOMEN and KIDS section.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
