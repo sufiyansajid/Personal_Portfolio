@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RevealOnScroll } from "../RevealOnScroll";
+import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
 export const Contact = () => {
@@ -35,12 +35,17 @@ const PUBLIC_KEY="hlThISM4kkST6mek9";
       id="contact"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <RevealOnScroll>
-        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
-            Get In Touch
-          </h2>
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true, margin: "-100px" }}
+        className="glass px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-8 rounded-xl border border-white/10 hover:-translate-y-1 transition-all"
+      >
+        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+          {" "}
+          Get In Touch
+        </h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
@@ -94,8 +99,7 @@ const PUBLIC_KEY="hlThISM4kkST6mek9";
               Send Message
             </button>
           </form>
-        </div>
-      </RevealOnScroll>
+      </motion.div>
     </section>
   );
 };

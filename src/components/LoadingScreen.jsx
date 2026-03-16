@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export const LoadingScreen = ({ onComplete }) => {
 
@@ -25,7 +26,11 @@ export const LoadingScreen = ({ onComplete }) => {
 
 
 
-    return <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
+    return <motion.div 
+        initial={{ opacity: 1 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
         <div className="mb-4 text-4xl font-mono font-bold">
             {text} <span className="animate-blink ml-1"> | </span>
         </div>
@@ -34,5 +39,5 @@ export const LoadingScreen = ({ onComplete }) => {
                 {" "}
             </div>
         </div>
-    </div>
+    </motion.div>
 }
